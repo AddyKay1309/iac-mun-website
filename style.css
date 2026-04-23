@@ -159,3 +159,8 @@ nav a:hover {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+<a href="https://www.munum.org/" target="_blank" class="conf-card">
+.conf-card {
+  text-decoration: none;
+  color: inherit;
+}
