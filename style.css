@@ -127,3 +127,35 @@ nav a:hover {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+.conference-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 60px;
+}
+
+.conf-card {
+  background: rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 25px;
+
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.conf-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+}
+
+.conf-card h2 {
+  margin-top: 0;
+  color: #0a1f44;
+}
+
+.conf-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
